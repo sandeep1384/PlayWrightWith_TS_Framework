@@ -1,0 +1,22 @@
+{
+  "name": "playwrightwith_ts_framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeep1384/PlayWrightWith_TS_Framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandeep1384/PlayWrightWith_TS_Framework/issues"
+  },
+  "homepage": "https://github.com/sandeep1384/PlayWrightWith_TS_Framework#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.15"
+  }
+}
