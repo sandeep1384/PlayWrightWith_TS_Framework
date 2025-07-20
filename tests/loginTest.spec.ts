@@ -1,12 +1,8 @@
-import {test, expect} from '@playwright/test';
-import {LandingPage} from '../pages/landingPage';
-import {DashBoardPage} from '../pages/dashBoardPage';
+import {test, expect} from '../fixtures/testFixtures';
 
-test('Verify Login Tests', async ({page}) => {
+
+test('Verify Login Tests', async ({page, landingPage, dashBoardPage}) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
-    const landingPage = new LandingPage(page);
-    const dashBoardPage = new DashBoardPage(page);
-
     // Enter email and password
     await landingPage.enterEmailId('Admin');
     await landingPage.enterPassword('admin123');
