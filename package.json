@@ -2,7 +2,15 @@
   "name": "playwrightwith_ts_framework",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "clean:reports": "rimraf allure-results allure-report && mkdirp allure-results && mkdirp allure-report",
+    "generate:reports": "npx allure generate ./allure-results --clean",
+    "open:reports": "npx allure open ./allure-report",
+    "pretest":"npm run clean:reports",
+    "posttest": "npm run generate:reports && npm run open:reports",
+    "execute:script":"npx playwright test ./tests/loginTest.spec.ts --project=chromium --headed",
+    "test":"npm run execute:script || npm run posttest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sandeep1384/PlayWrightWith_TS_Framework.git"
@@ -17,6 +25,12 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.54.1",
-    "@types/node": "^24.0.15"
+    "@types/node": "^24.0.15",
+    "allure-playwright": "^3.3.2",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.34.1"
   }
 }
