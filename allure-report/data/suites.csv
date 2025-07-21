@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","9086","Verify Login Tests","chromium","Sun Jul 20 20:59:36 IST 2025","passed","Sun Jul 20 20:59:45 IST 2025","","loginTest.spec.ts","",""
+"","8875","Verify Login Tests","chromium","Mon Jul 21 03:33:50 UTC 2025","passed","Mon Jul 21 03:33:59 UTC 2025","","loginTest.spec.ts","",""

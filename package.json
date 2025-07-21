@@ -8,7 +8,7 @@
     "open:reports": "npx allure open ./allure-report",
     "pretest":"npm run clean:reports",
     "posttest": "npm run generate:reports && npm run open:reports",
-    "execute:script":"npx playwright test ./tests/loginTest.spec.ts --project=chromium --headed",
+    "execute:script":"npx playwright test ./tests/loginTest.spec.ts --project=chromium",
     "test":"npm run execute:script || npm run posttest"
   },
   "repository": {
